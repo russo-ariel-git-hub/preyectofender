@@ -1,0 +1,381 @@
+* { padding: 0; margin: 0;  box-sizing: border-box; }
+
+ 
+body {
+    position: relative;}
+    .img_body{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;}   
+#bodygyb { background-image: linear-gradient( 10px white, 10px white);}
+        /* header standar  */
+    .header__fender{ 
+        width: 100%;
+        height: 320px;
+        border-bottom: solid 8px black;
+        display: flex;}    
+        .div__fender{
+            position: relative;
+            height: 320px;
+            width: 100%; 
+        }
+        .a{
+            text-decoration: none;
+            color: white;
+       
+        }
+        .img__header{
+            height: 320px;
+            width: 100%;
+            
+            position: absolute ;
+            z-index: -1;
+        } 
+        .nav__header { 
+            height: 300px;
+            width: 100%;
+            display: flex;
+            align-items:center;
+            align-items: flex-end;
+            justify-content: flex-end;
+            animation-duration:2s ;
+            animation-name:aparecer;
+            animation-iteration-count: infinite;
+           @keyframes aparecer {
+            
+            0%{ opacity: 0;}
+            100%{ opacity: 1 ;}
+           }
+        }
+        .list__fender { 
+            list-style-type: none;
+            color:rgb(255, 252, 248);
+            margin: 20px;
+           
+        }
+        .li {
+            display: inline;
+            text-shadow: 4px 4px rgb(0, 0, 0);
+            font-family: 'Courier New', Courier, monospace;
+            font-size:large;
+           
+        }
+   /* footer standar  */
+    .footer__fender {  
+        background-color: black;
+        padding: 3px;
+        height: 200px;
+        width: 100%;
+        display: flex;}
+        .section__footer{ 
+            height: 200px;
+            width: 100%;
+            padding-top: 15px;
+            display:flex;
+            justify-content:space-between;
+            align-items: center; }
+            .div1__footer{
+                height: 100px;
+                width: 200px;
+                display:flex;
+                justify-content:space-between;}
+                .fart1 {
+                    height: 100px;
+                    width: 100;
+                    margin-left: 20px;               
+                    display: flex;}
+                    .img_footer {
+                        background-color: white;
+                        border-radius: 50%;}                                
+                .fart2{
+                    margin-left: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;}
+                    .a__footer{
+                        color:white;
+                        text-decoration: none;
+                        text-shadow: 1px 1px rgb(255, 255, 255);
+                        font-family: 'Courier New', Courier, monospace;
+                        font-size: 25px;
+                        ;}
+            .div2__footer{  
+               
+                height: 100px;
+                width: 600px;
+                padding: 1px;
+                margin-right: 15px;
+                display: flex;
+                justify-content:space-between;}
+                .img__footer {
+                    background-color: white;
+                    border-radius: 50%;}     
+  /*  /* main home */
+    .main{ 
+        margin: top 3px;
+        padding: 3px;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid 8px black;}   
+        .section__grid  {          
+            display: grid;
+            grid-template-columns: 400px 400px 400px   ;
+            grid-template-rows: 400px 400px 400px;          
+            grid-template-areas:
+            "art1  art1 art1 "
+            "art2 art3 art3"
+            "art4 art4 art5" 
+            ;
+            grid-column-gap: 15px;
+            grid-row-gap: 15px;}
+        .art1{        
+            grid-area:art1;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;          
+            padding: 3px;          }
+        .art2{         
+            border-radius: 50%;
+            grid-area: art2;}
+        .art3{ 
+            grid-area: art3;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            padding: 5px;}
+        .art4{
+            grid-area: art4;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;          
+            padding: 5px;}
+        .art5{
+            border-radius: 50%;
+            grid-area: art5;}
+        .pcolor{
+            color: rgb(253, 253, 253);}             
+    /* main Guitar &  Bass */
+    .main__g{ 
+        background-color: black;              
+        padding: 3px;
+        display:flex;
+        justify-content: center;}
+        .section__g {
+            border: solid 2px black;
+            display: grid;
+            grid-template-columns: 200px 400px 200px ;
+            grid-template-rows: 150px 200px 200px 200px 200px ;
+            grid-template-areas: 
+            "art1 art1 art1  "
+            "immg1 art2 asid1 "
+            "immg2 art3 asid1 "
+            "immg3 art4 asid2  "
+            "immg4 art5 asid2 " ;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px ;}   
+            .p_main{
+                padding: 3px;
+                color:white;
+                font-family: Georgia, 'Times New Roman', Times, serif;}
+            .art1m{
+                grid-area:art1;}
+            .art2m{ 
+                grid-area:art2;}
+            .art3m{
+                grid-area:art3;}
+            .art4m{
+                grid-area:art4;}
+            .art5m{
+                
+                grid-area:art5;}
+            .img1{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                grid-area:immg1;}
+            .img2{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                grid-area: immg2;}
+            .img3{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                grid-area: immg3;}
+            .img4{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                grid-area: immg4;}
+            .aside1{
+               
+                grid-area: asid1;
+                padding: 3px;
+                display:flex;
+                flex-direction: column;
+                align-items: center;}
+            .aside2{ 
+                grid-area: asid2;
+                padding: 3px;
+                display:flex;
+                flex-direction: column;
+                align-items: center;}
+            .imgshop{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;}
+/*contact */
+.footercontact {  
+    background-color: black;
+    padding: 3px;
+    height: 200px;
+    width: 100%;
+    display: flex;}
+    .section__footer{ 
+        height: 200px;
+        width: 100%;
+        padding-top: 15px;
+        display:flex;
+        justify-content:space-between;
+        align-items: center; }
+        .div1__footer{
+            height: 100px;
+            width: 200px;
+            display:flex;
+            justify-content:space-between;}
+            .fart1 {
+                height: 100px;
+                width: 100;
+                margin-left: 20px;               
+                display: flex;}
+                .img_footer {
+                    background-color: white;
+                    border-radius: 50%;}                                
+            .fart2{
+                margin-left: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;}
+                .a__footer{
+                    color:white;
+                    text-decoration: none;
+                    text-shadow: 1px 1px rgb(255, 255, 255);
+                    font-family: 'Courier New', Courier, monospace;
+                    font-size: 25px;
+                    ;}
+        .div2__footer{  
+           
+            height: 100px;
+            width: 600px;
+            padding: 1px;
+            margin-right: 15px;
+            display: flex;
+            justify-content:space-between;}
+            .img__footer {
+                background-color: white;
+                border-radius: 50%;}  
+.form{
+    background-color: black;
+   padding:1px;
+}
+    .fieldset {
+    background-color: black;
+    color: white;
+    margin: 15px;}
+/* about*/
+.about_section{
+    background-color: black;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    height: 400px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;}
+    .div_about{
+        height: 200px;
+        width: 400px;
+    }
+    .p_Aboutñ{
+        color: white;
+      
+    }
+
+
+ 
+@media (min-width:768px) {
+                        .section__grid{             
+                            grid-template-columns: 200px 200px 200px;
+                            grid-template-rows: 400px 350px 350px;          
+                            grid-column-gap: 20px;
+                            grid-row-gap: 20px;}
+                        .art2{         
+                            width: 200px;
+                            height: 350px;}
+                        .art5{
+                            width: 200px;
+                            height: 350px;}   
+                        .div2__footer{  
+                     justify-content: flex-end; }
+                        .img__footer {
+                            background-color: white;
+                            border-radius: 50%;
+                            margin: 5px;}
+                        .section__g {
+                                grid-template-columns: 200px 300px 200px ;
+                                grid-template-rows: 200px 300px 300px 300px 300px ;}
+                        .aside1{               
+                                    justify-content: center;}
+                        .aside2{ 
+                                    justify-content: center;}}                    
+@media (min-width:425px) {
+                                        .main__g{ 
+                                            justify-content: flex-start;}
+                                        .section__g {
+                                                justify-items: center;
+                                                grid-template-columns: 390px ;
+                                                grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px ;
+                                                grid-template-areas: 
+                                                "art1 "
+                                                "immg1  "
+                                                "art2  "
+                                                "immg2   "
+                                                "art3  "
+                                                "immg3  "
+                                                "art4 "
+                                                "immg4 "
+                                                "art5" 
+                                                 ;
+                                                grid-row-gap: 90px ;
+                                                margin-left : 5px; }
+                                        .div_asid_movil{
+                                                display: flex; }
+                                        .div1__footer{
+                                                flex-direction: column;}
+                                        .div2__footer{         
+                                                justify-content: space-evenly;
+                                                align-items: flex-end;}
+                                        .img__footer{
+                                                height: 50px;
+                                                width: 50px}
+                                        .section__grid{          
+                                                    display: grid;
+                                                    grid-template-columns: 140px 120px 140px   ;
+                                                    grid-template-rows: 500px 500px 600px;          
+                                                    grid-template-areas:
+                                                    "art1  art1 art1 "
+                                                    "art2 art3 art3"
+                                                    "art4 art4 art5" 
+                                                    ;
+                                                    grid-column-gap: 15px;
+                                                    grid-row-gap: 15px;}
+                                        .art2{
+                                                        height: 200px; width: 125px;} 
+                                        .art5{
+                                                        height: 200px; width: 125px;}
+                                        .main{
+                                            justify-content: space-between;}
+                                        .art3{
+                                            margin-right: 2px;}         
+    } 
+ 
