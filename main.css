@@ -8,7 +8,6 @@ body {
         width: 100%;
         position: absolute;
         z-index: -1;}   
-#bodygyb { background-image: linear-gradient( 10px white, 10px white);}
         /* header standar  */
     .header__fender{ 
         width: 100%;
@@ -19,6 +18,10 @@ body {
             position: relative;
             height: 320px;
             width: 100%; 
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+             align-content: flex-end;
         }
         .a{
             text-decoration: none;
@@ -32,7 +35,7 @@ body {
             position: absolute ;
             z-index: -1;
         } 
-        .nav__header { 
+        /* .nav__header { 
             height: 300px;
             width: 100%;
             display: flex;
@@ -60,7 +63,14 @@ body {
             font-family: 'Courier New', Courier, monospace;
             font-size:large;
            
-        }
+        } */
+        .nav_bar {background-color:none ; 
+            
+         }
+         
+           
+           
+       
    /* footer standar  */
     .footer__fender {  
         background-color: black;
@@ -273,14 +283,10 @@ body {
             .img__footer {
                 background-color: white;
                 border-radius: 50%;}  
-.form{
+.boton_contact {
     background-color: black;
-   padding:1px;
-}
-    .fieldset {
-    background-color: black;
-    color: white;
-    margin: 15px;}
+border: solid white 2px;
+ color:white}
 /* about*/
 .about_section{
     background-color: black;
@@ -288,20 +294,23 @@ body {
     font-family:'Times New Roman', Times, serif;
     color: white;
     height: 400px;
+    padding-bottom: 10px;
+    padding-top: 50px;
     width: 100%;
     display:flex;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+    }
     .div_about{
-        height: 200px;
+        height: 400px;
         width: 400px;
     }
-    .p_Aboutñ{
+    .p_About{
         color: white;
       
     }
 
-
+/*
  
 @media (min-width:768px) {
                         .section__grid{             
@@ -378,4 +387,4 @@ body {
                                         .art3{
                                             margin-right: 2px;}         
     } 
- 
+ */
