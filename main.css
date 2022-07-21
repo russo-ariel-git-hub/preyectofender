@@ -8,6 +8,7 @@ body {
         width: 100%;
         position: absolute;
         z-index: -1;}   
+ #bodygyb{background-color: black;}       
         /* header standar  */
     .header__fender{ 
         width: 100%;
@@ -77,6 +78,7 @@ body {
         padding: 3px;
         height: 200px;
         width: 100%;
+        margin-top: 10px;
         display: flex;}
         .section__footer{ 
             height: 200px;
@@ -89,19 +91,24 @@ body {
                 height: 100px;
                 width: 200px;
                 display:flex;
-                justify-content:space-between;}
+                justify-content: space-between;
+                flex-direction: column;}
                 .fart1 {
                     height: 100px;
                     width: 100;
                     margin-left: 20px;               
-                    display: flex;}
+                    display: flex;
+                    align-items: center;
+                     justify-content: flex-start;}
                     .img_footer {
                         background-color: white;
                         border-radius: 50%;}                                
                 .fart2{
                     margin-left: 30px;
                     display: flex;
-                    justify-content: center;
+                   
+                    
+                    justify-content: flex-start;
                     align-items: center;}
                     .a__footer{
                         color:white;
@@ -117,7 +124,10 @@ body {
                 padding: 1px;
                 margin-right: 15px;
                 display: flex;
-                justify-content:space-between;}
+                justify-content: space-evenly;
+                
+}
+            
                 .img__footer {
                     background-color: white;
                     border-radius: 50%;}     
@@ -128,22 +138,13 @@ body {
         display: flex;
         justify-content: center;
         border-bottom: solid 8px black;}   
-        .section__grid  {          
-            display: grid;
-            grid-template-columns: 400px 400px 400px   ;
-            grid-template-rows: 400px 400px 400px;          
-            grid-template-areas:
-            "art1  art1 art1 "
-            "art2 art3 art3"
-            "art4 art4 art5" 
-            ;
-            grid-column-gap: 15px;
-            grid-row-gap: 15px;}
+       
         .art1{        
             grid-area:art1;
             font-family: 'Times New Roman', Times, serif;
             font-size: larger;          
-            padding: 3px;          }
+            padding: 3px;   
+        margin-bottom: 10px;       }
         .art2{         
             border-radius: 50%;
             grid-area: art2;}
@@ -287,7 +288,10 @@ body {
     background-color: black;
 border: solid white 2px;
  color:white}
-/* about*/
+.main__contacto{
+    margin-top: 10px;;
+}
+ /* about*/
 .about_section{
     background-color: black;
     font-size: large;
