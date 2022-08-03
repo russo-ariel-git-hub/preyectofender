@@ -1,0 +1,32 @@
+ /* header standar  */
+ .header__fender {
+    width: 100%;
+    height: 330px;
+   
+    margin-bottom: 10px;
+    display: flex; }
+    .header__fender .div__fender {
+      position: relative;
+      height: 320px;
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      align-content: flex-end; }
+    .header__fender .a {
+      text-decoration: none;
+      color: white; }
+    .header__fender .img__header {
+      height: 320px;
+      width: 100%;
+      position: absolute;
+      z-index: -1; }
+    .header__fender .nav__header {
+      height: 300px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  
