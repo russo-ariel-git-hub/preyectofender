@@ -3,22 +3,16 @@
   margin: 0;
   box-sizing: border-box; }
 
-body {
-  position: relative; }
-  body .img_body {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -1; }
-
-#bodygyb {
-  background-color: black; }
+#bodygyb {background: rgb(0,0,0);
+  background: linear-gradient(292deg, rgba(0,0,0,1) 13%, rgba(255,255,255,1) 21%, rgba(0,0,0,1) 35%);
+   }
 
 /* header standar  */
 .header__fender {
   width: 100%;
-  height: 320px;
-  border-bottom: solid 8px black;
+  height: 330px;
+ 
+  margin-bottom: 10px;
   display: flex; }
   .header__fender .div__fender {
     position: relative;
@@ -43,30 +37,12 @@ body {
     align-items: center;
     align-items: flex-end;
     justify-content: flex-end;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite; }
+  }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-  .header__fender .list__fender {
-    list-style-type: none;
-    color: #fffcf8;
-    margin: 20px; }
-  .header__fender .li {
-    display: inline;
-    text-shadow: 4px 4px black;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large; }
-  .header__fender .nav_bar {
-    background-color: none; }
 
 /* footer standar  */
 .footer__fender {
-  background-color: black;
+  
   padding: 3px;
   height: 200px;
   width: 100%;
@@ -123,7 +99,9 @@ body {
 
 .img__footer {
   background-color: white;
-  border-radius: 50%; }
+  border-radius: 50%; 
+}
+.img__footer:hover{ margin-top: 15px;}
 
 /*  /* main home */
 .main {
@@ -131,7 +109,7 @@ body {
   padding: 3px;
   display: flex;
   justify-content: center;
-  border-bottom: solid 8px black; }
+  }
 
 .art1 {
   grid-area: art1;
@@ -165,84 +143,45 @@ body {
 
 /* main Guitar &  Bass */
 .main__g {
-  background-color: black;
   padding: 3px;
   display: flex;
-  justify-content: center; }
-
-.section__g {
-  border: solid 2px black;
-  display: grid;
-  grid-template-columns: 200px 400px 200px;
-  grid-template-rows: 150px 200px 200px 200px 200px;
-  grid-template-areas: "art1 art1 art1  " "immg1 art2 asid1 " "immg2 art3 asid1 " "immg3 art4 asid2  " "immg4 art5 asid2 ";
-  grid-column-gap: 30px;
-  grid-row-gap: 30px; }
-
+  justify-content: center;}
 .p_main {
   padding: 3px;
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif; }
-
-.art1m {
-  grid-area: art1; }
-
-.art2m {
-  grid-area: art2; }
-
-.art3m {
-  grid-area: art3; }
-
-.art4m {
-  grid-area: art4; }
-
-.art5m {
-  grid-area: art5; }
-
-.img1 {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  grid-area: immg1; }
-
-.img2 {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  grid-area: immg2; }
-
-.img3 {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  grid-area: immg3; }
-
-.img4 {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  grid-area: immg4; }
-
+.img {
+  height: 800px;
+  width: 1000px;
+  
+  }
+.main__art{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;}
+  .sectiongyb{ 
+  display: grid;
+  grid-template-columns: 200px 200px ;
+  grid-template-rows: 200px;
+  grid-template-areas: 
+  "asid1 asid2"
+  "asid3 asid4";}
 .aside1 {
-  grid-area: asid1;
-  padding: 3px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
+  grid-area: asid1;}
 .aside2 {
-  grid-area: asid2;
-  padding: 3px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
+  grid-area: asid2;}
+.aside3 {
+  grid-area: asid3;}
+.aside4 {
+  grid-area: asid4;}
 .imgshop {
   height: 100px;
   width: 100px;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 /*contact */
+.body_contact {background-color: black;}
 .footercontact {
   background-color: black;
   padding: 3px;
@@ -310,11 +249,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-
 .div_about {
   height: 400px;
   width: 400px; }
-
 .p_About {
   color: white; }
 
