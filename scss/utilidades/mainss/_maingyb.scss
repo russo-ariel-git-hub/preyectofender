@@ -1,0 +1,45 @@
+/* main Guitar &  Bass */
+.main__g {
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+  .p_main {
+    padding: 3px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+  .img {
+    height: 800px;
+    width: 700px;
+    
+    }
+   }
+  
+  
+  
+  .main__art{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+  .sectiongyb{ 
+    color:white;
+    display: grid;
+    grid-template-columns: 200px 200px ;
+    grid-template-rows: 200px;
+    grid-template-areas: 
+    "asid1 asid2"
+    "asid3 asid4";}
+  .aside1 {
+    grid-area: asid1;}
+  .aside2 {
+    grid-area: asid2;}
+  .aside3 {
+    grid-area: asid3;}
+  .aside4 {
+    grid-area: asid4;}
+  .imgshop {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  }
