@@ -4,7 +4,7 @@
     height: 330px;
    
     margin-bottom: 10px;
-    display: flex; }
+    display: flex; 
     .header__fender .div__fender {
       position: relative;
       height: 320px;
@@ -12,7 +12,7 @@
       display: flex;
       flex-wrap: nowrap;
       justify-content: flex-end;
-      align-content: flex-end; }
+      align-content: flex-end; 
     .header__fender .a {
       text-decoration: none;
       color: white; }
@@ -29,4 +29,5 @@
       align-items: flex-end;
       justify-content: flex-end;
     }
-  
+    }
+  }
