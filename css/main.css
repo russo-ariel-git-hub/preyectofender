@@ -196,11 +196,14 @@
     justify-content: center; }
   .img {
     height: 200px;
-    width: 200px; } }
+    width: 200px; }
+    .main__g{ width: 800px;} }
 
 @media (min-width: 425px) {
   .main__g {
-    justify-content: flex-start; }
+    justify-content: flex-start; 
+    width: 500px;}
+  
   .section__g {
     justify-items: center;
     grid-template-columns: 390px;
@@ -250,7 +253,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif; }
   .main__g .img {
     height: 600px;
-    width: 600px; }
+    width: 1000px; }
 
 .main__art {
   margin-top: 20px;
@@ -261,7 +264,8 @@
     display: grid;
     grid-template-columns: 200px 200px;
     grid-template-rows: 200px;
-    grid-template-areas: "asid1 asid2" "asid3 asid4"; }
+    grid-template-areas: "asid1 asid2"
+ "asid3 asid4"; }
   .main__art .aside1 {
     grid-area: asid1; }
   .main__art .aside2 {
